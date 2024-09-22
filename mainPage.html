@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="styles/stylesForMainPage.css" />
+    <title>Main Page</title>
+  </head>
+  <body>
+    <header>
+      <div class="header__logoWebsite">
+        <img src="./icons/Logo.svg" alt="logo" />
+        <h1>Deliv<span>Me</span></h1>
+      </div>
+
+      <div class="header__buttonBlock">
+        <button class="changingLanguage">Fr</button>
+        <button class="changingLanguage active">En</button>
+        <button class="partnerProposaButtn">
+          <img src="./icons/Frame.svg" alt="" /> Partner with us
+        </button>
+        <button class="signUp">Sign up</button>
+
+        <div class="header__dopButtBlock_hidden">
+          <button class="changeFunctions">
+            <img src="./icons/IcoDop1.svg" alt="" />
+          </button>
+          <button class="changeFunctions">
+            <img src="./icons/IcoDop2.svg" alt="" />
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="main__title">
+        <h1>Restaurant Food And Store Groceries For Takeaway Or Delivery</h1>
+      </div>
+
+      <form class="main__formBlock">
+        <div class="content">
+          <h2>Enter your address to see what we deliver</h2>
+          <div class="inputBlock">
+            <img src="./icons/Vector.svg" alt="" /><input
+              type="text"
+              placeholder="Enter your full address"
+              class="addressInputField"
+            />
+            <button class="searchButn">Search</button>
+          </div>
+
+          <a href=""><span>Log in</span> for your recent addresses</a>
+        </div>
+      </form>
+
+      <div class="main__shippingData">
+        <img
+          src="./icons/tracking.svg"
+          alt=""
+          class="shippingData__decoration"
+        />
+        <div class="shippingData__infoBlock">
+          <div class="content">
+            <h2>Track orders to your door</h2>
+            <p>
+              Get your favorite food delivered quickly. You’ll be notified when
+              your rider picks up your order and can track their progress. Plus,
+              you’ll receive an alert when they’re close by.
+            </p>
+            <img src="./icons/GroupIcons.svg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <ul class="offersForYou">
+        <li>
+          <div class="offersForYou__wrapperPhoto">
+            <img src="./icons/Rectangle.svg" alt="" />
+          </div>
+          <div class="offersForYou__textContent">
+            <h3>Partner with us</h3>
+            <p>
+              Join DelivMe to expand your customer base like never before. We
+              take care of the delivery, so you can concentrate on the food.
+            </p>
+            <button class="offersForYou__btnStarted">Get started</button>
+          </div>
+        </li>
+        <li>
+          <div class="offersForYou__wrapperPhoto">
+            <img src="./icons/Rectangle6266.svg" alt="" />
+          </div>
+          <div class="offersForYou__textContent">
+            <h3>Ride with us</h3>
+            <p>
+              The flexibility to shape work around your lifestyle, along with
+              excellent fees, benefits, and discounts.
+            </p>
+            <button class="offersForYou__btnStarted">Get started</button>
+          </div>
+        </li>
+        <li>
+          <div class="offersForYou__wrapperPhoto">
+            <img src="./icons/Rectangle6264.svg " alt="" />
+          </div>
+          <div class="offersForYou__textContent">
+            <h3>DelivMe for Work</h3>
+            <p>
+              From team lunches to meal allowances for your late-night
+              employees, we handle all your workplace meal needs.
+            </p>
+            <button class="offersForYou__btnStarted">Get started</button>
+          </div>
+        </li>
+      </ul>
+    </main>
+    <footer></footer>
+
+    <script>
+      const changeLanguage = document.querySelectorAll(".changingLanguage");
+
+      changeLanguage.forEach((button) => {
+        button.addEventListener("click", () => {
+          changeLanguage.forEach((btn) => btn.classList.remove("active"));
+
+          button.classList.add("active");
+        });
+      });
+      ////////////////////////////////////////////////////////////////////////
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.querySelector("footer").innerHTML = data;
+        });
+      //////////////////////////////////////////////////////////////////
+      const input = document.querySelector(".addressInputField");
+
+      input.addEventListener("focus", function () {
+        this.placeholder = "";
+      });
+
+      input.addEventListener("blur", function () {
+        if (this.value === "") {
+          this.placeholder = "Enter your full address";
+        }
+      });
+      /////////////////////////////////////////////////////////
+      const changeFunctions = document.querySelectorAll(".changeFunctions");
+      changeFunctions.forEach((button) => {
+        button.addEventListener("click", () => {
+          changeFunctions.forEach((btn) => btn.classList.remove("active"));
+
+          button.classList.add("active");
+        });
+      });
+    </script>
+  </body>
+</html>

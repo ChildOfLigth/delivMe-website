@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Deliv Me</title>
+  </head>
+  <body>
+    <header>
+      <div class="logotypeWed">
+        <img src="./icons/Logo.svg" alt="icoWebsite" class="ico" />
+        <h1>Deliv<span>Me</span></h1>
+      </div>
+
+      <button class="menuBurger">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="buttonsBlock">
+        <button class="langSwitchButt">Fr</button>
+        <button class="langSwitchButt active">En</button>
+        <button class="signUpBtn">Sign up</button>
+      </div>
+    </header>
+
+    <div class="drop-downMenu">
+      <button class="langSwitchButt">Fr</button>
+      <button class="langSwitchButt active">En</button>
+      <button class="closeMenu"><span></span><span></span><span></span></button>
+    </div>
+
+    <main>
+      <div class="registrationUnit">
+        <div class="registrationUnit_wrapper">
+          <h2>Log in to Rider Hub</h2>
+          <p>
+            Enter the email address linked to your account.If we find an account
+            matching your email, you'll be sent a one-time passcode.
+          </p>
+
+          <form class="registForm">
+            <label for="inputAddress">Email Address</label>
+            <input
+              type="text"
+              name="inputAddress"
+              class="registForm_inputField"
+            />
+            <a class="linkInCaseError" href=""
+              >Don't have access to your email?</a
+            >
+
+            <button class="sendOneTimePass">Send one-time passcode</button>
+
+            <p class="applyNow">
+              Don’t have an account yet?<a href=""> Apply Now</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="cardsBlock">
+        <ul class="cardsBlock_card">
+          <div class="cardsBlock_card_content">
+            <h2>Discover DelivMe</h2>
+            <li>Investors</li>
+            <li>About us</li>
+            <li>Takeaway</li>
+            <li>More</li>
+            <li>Newsroom</li>
+            <li>Engineering blog</li>
+            <li>Design blog</li>
+            <li>Careers</li>
+            <li>Restaurant signup</li>
+          </div>
+        </ul>
+
+        <ul class="cardsBlock_card">
+          <div class="cardsBlock_card_content">
+            <h2>Legal</h2>
+            <li>Terms and conditions</li>
+            <li>Privacy</li>
+            <li>Cookies</li>
+            <li>Speak Up</li>
+            <li>Partner ranking</li>
+            <li>Public Authority Requests</li>
+          </div>
+        </ul>
+
+        <ul class="cardsBlock_card">
+          <div class="cardsBlock_card_content">
+            <h2>Take DelivMe with you</h2>
+            <li>
+              <img src="./icons/AppStore.svg" alt="" class="liImg" />
+            </li>
+            <li><img src="./icons/GooglePlay.svg" alt="" class="liImg" /></li>
+          </div>
+        </ul>
+
+        <ul class="cardsBlock_card">
+          <div class="cardsBlock_card_content">
+            <h2>Help</h2>
+            <li>Contact</li>
+            <li>FAQs</li>
+            <li>Cuisines</li>
+          </div>
+        </ul>
+      </div>
+    </footer>
+
+    <script>
+      const changeLanguage = document.querySelectorAll(".langSwitchButt");
+
+      changeLanguage.forEach((button) => {
+        button.addEventListener("click", () => {
+          changeLanguage.forEach((btn) => btn.classList.remove("active"));
+
+          button.classList.add("active");
+        });
+      });
+
+      const burgerMenuButton = document.querySelector(".menuBurger");
+      const closeButtonsMenu = document.querySelector(".closeMenu");
+      const dropDownDiv = document.querySelector(".drop-downMenu");
+
+      burgerMenuButton.onclick = () => dropDownDiv.classList.add("active");
+      closeButtonsMenu.onclick = () => dropDownDiv.classList.remove("active");
+      ////////////////////////////////////////////////////////////////////////
+      const form = document.querySelector(".registForm");
+
+      form.onsubmit = (e) => {
+        e.preventDefault();
+        const emailInputField = form.querySelector(".registForm_inputField");
+        if (emailInputField.value && emailInputField.value.length != 0) {
+          location.href = "mainPage.html";
+        } else {
+          emailInputField.style.border = "2px solid red";
+        }
+
+        emailInputField.onchenge = () => {
+          if (emailInputField.value.length != 0) {
+            emailInputField.style.border = "none";
+          }
+        };
+      };
+    </script>
+  </body>
+</html>
