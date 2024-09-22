@@ -1,0 +1,824 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-image: url("../BACKGROUND_DESIGN.svg");
+  font-family: "Roboto", sans-serif;
+  margin: 0 auto;
+  overflow-x: hidden;
+  background-color: #f1f0f0;
+}
+body header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  top: 20px;
+  width: 95%;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+body header .header__logoWebsite {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 10%;
+  height: 50px;
+}
+body header .header__logoWebsite img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+body header .header__logoWebsite h1 {
+  font-size: 29px;
+  font-weight: 700;
+  color: #9772ff;
+}
+body header .header__logoWebsite h1 span {
+  color: #a6d058;
+}
+body header .header__buttonBlock {
+  position: absolute;
+  right: 0;
+  width: 25%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+body header .header__buttonBlock button {
+  margin-left: 10px;
+  height: 100%;
+  border-radius: 10px;
+}
+body header .header__buttonBlock .changingLanguage {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 1;
+  width: 13%;
+  background-color: white;
+  color: #9772ff;
+  font-size: 1rem;
+  font-weight: 600;
+  border: transparent;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+body header .header__buttonBlock .changingLanguage.active {
+  background-color: #9772ff;
+  color: white;
+}
+body header .header__buttonBlock .signUp {
+  width: 20%;
+  opacity: 1;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background-color: white;
+  color: #9772ff;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  border: 2px solid transparent;
+}
+body header .header__buttonBlock .signUp:hover {
+  border: 2px solid #9772ff;
+}
+body header .header__buttonBlock .partnerProposaButtn {
+  opacity: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 21px;
+  width: 52%;
+  background-color: white;
+  color: #9772ff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  border: 2px solid transparent;
+}
+body header .header__buttonBlock .partnerProposaButtn img {
+  margin-right: 4px;
+  width: 1.2rem;
+  height: auto;
+}
+body header .header__buttonBlock .partnerProposaButtn:hover {
+  border: 2px solid #9772ff;
+}
+body header .header__buttonBlock .header__dopButtBlock_hidden {
+  display: none;
+  opacity: 0;
+}
+body main {
+  width: 90%;
+  margin: 0 auto;
+}
+body main .main__title {
+  position: relative;
+  top: 100px;
+  width: 80%;
+  height: 414px;
+  margin: 0 auto;
+}
+body main .main__title h1 {
+  text-align: center;
+  font-size: 7vw;
+  font-weight: 700;
+  line-height: 135px;
+}
+body main .main__formBlock {
+  position: relative;
+  top: 70px;
+  width: 50%;
+  height: 284px;
+  border-radius: 24px;
+  background-color: white;
+  margin: 55px auto 190px auto;
+}
+body main .main__formBlock .content {
+  position: relative;
+  top: 33px;
+  left: 40px;
+}
+body main .main__formBlock .content h2 {
+  font-size: 1.2rem;
+  line-height: 31.92px;
+}
+body main .main__formBlock .content .inputBlock {
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 32px 13px rgba(13, 13, 13, 0.01), 0px 18px 11px rgba(13, 13, 13, 0.05), 0px 8px 8px rgba(13, 13, 13, 0.09), 0px -4px 8px rgba(19, 19, 19, 0.1);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 32px 13px rgba(13, 13, 13, 0.01), 0px 18px 11px rgba(13, 13, 13, 0.05), 0px 8px 8px rgba(13, 13, 13, 0.09), 0px -4px 8px rgba(19, 19, 19, 0.1);
+  width: 93%;
+  height: 67px;
+  border-radius: 15px;
+  margin: 30px 0 45px 0;
+}
+body main .main__formBlock .content .inputBlock img {
+  position: absolute;
+  left: 40px;
+  top: 20px;
+  -webkit-box-flex: 5%;
+      -ms-flex: 5%;
+          flex: 5%;
+  height: 27px;
+}
+body main .main__formBlock .content .inputBlock .addressInputField {
+  position: absolute;
+  top: 20px;
+  left: 85px;
+  width: 60%;
+  border: none;
+  font-size: 1.2rem;
+  color: rgba(19, 19, 19, 0.5019607843);
+}
+body main .main__formBlock .content .inputBlock .addressInputField:focus {
+  outline: none;
+  border-color: transparent;
+}
+body main .main__formBlock .content .inputBlock button {
+  position: absolute;
+  width: 17%;
+  height: 55px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  left: 80%;
+  top: 0;
+  margin: 6px 0;
+  background-color: #9772ff;
+  color: white;
+  padding: 16px 32px 16px 32px;
+  border-radius: 15px;
+  font-size: 20px;
+  border: none;
+}
+body main .main__formBlock .content a {
+  font-size: 20px;
+  color: black;
+  font-weight: 300;
+  text-decoration: none;
+}
+body main .main__formBlock .content a span {
+  color: #9772ff;
+}
+body main .main__shippingData {
+  position: relative;
+  top: 88px;
+  background-image: url("../icons/map.svg");
+  width: 100%;
+  margin: 0 auto;
+  height: 721px;
+  border-radius: 24px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+body main .main__shippingData .shippingData__decoration {
+  position: relative;
+  left: 608px;
+  width: 53%;
+  -webkit-transform: rotate(-32.58);
+          transform: rotate(-32.58);
+}
+body main .main__shippingData .shippingData__infoBlock {
+  position: absolute;
+  top: -3px;
+  left: -10px;
+  width: 27%;
+  min-height: 320px;
+  background-color: white;
+  border-bottom-right-radius: 24px;
+}
+body main .main__shippingData .shippingData__infoBlock .content {
+  width: 90%;
+  height: 60%;
+  margin: 40px 50px;
+}
+body main .main__shippingData .shippingData__infoBlock .content h2 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 30.62px;
+}
+body main .main__shippingData .shippingData__infoBlock .content p {
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 24px;
+  width: 90%;
+}
+body main .main__shippingData .shippingData__infoBlock .content img {
+  width: 90%;
+  position: relative;
+  top: 20%;
+}
+body main .offersForYou {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 240px 0 50px 0;
+  padding-bottom: 50px;
+  width: 100%;
+  height: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+body main .offersForYou li {
+  list-style: none;
+  width: 27%;
+  min-width: 320px;
+}
+body main .offersForYou li:nth-child(2) {
+  margin: 0 150px;
+}
+body main .offersForYou li .offersForYou__wrapperPhoto {
+  height: 466px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 24px;
+  margin-bottom: 10px;
+}
+body main .offersForYou li .offersForYou__wrapperPhoto img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body main .offersForYou li .offersForYou__textContent {
+  width: 97%;
+}
+body main .offersForYou li .offersForYou__textContent h3 {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+body main .offersForYou li .offersForYou__textContent p {
+  height: 144px;
+  font-size: 23px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+body main .offersForYou li .offersForYou__textContent .offersForYou__btnStarted {
+  position: relative;
+  top: 0;
+  width: 34%;
+  height: 53px;
+  border-radius: 10px;
+  padding: 16px, 32px, 16px, 32px;
+  font-size: 16px;
+  background-color: #9772ff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+body footer {
+  background-color: #57761e;
+  width: 100%;
+  padding: 20px 0;
+  margin-top: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+body footer .cardsBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 100%;
+  margin: 20px auto;
+}
+body footer .cardsBlock .cardsBlock_card {
+  width: 285px;
+  height: 286px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  margin: 0 15px;
+}
+body footer .cardsBlock .cardsBlock_card .cardsBlock_card_content {
+  position: relative;
+  top: 13px;
+  left: 17px;
+}
+body footer .cardsBlock .cardsBlock_card .cardsBlock_card_content h2 {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 33px;
+}
+body footer .cardsBlock .cardsBlock_card .cardsBlock_card_content li {
+  list-style: none;
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 24px;
+  color: white;
+}
+
+@media (max-width: 1440px) {
+  body header .header__logoWebsite {
+    left: 60px;
+  }
+  body header .header__buttonBlock {
+    width: 50%;
+  }
+  body header .header__buttonBlock .changingLanguage {
+    width: 7%;
+    opacity: 1;
+  }
+  body header .header__buttonBlock .signUp {
+    opacity: 1;
+  }
+  body header .header__buttonBlock .partnerProposaButtn {
+    width: 31%;
+    opacity: 1;
+  }
+  body main {
+    width: 100%;
+  }
+  body main .main__title {
+    top: 80px;
+    width: 80%;
+    height: 345px;
+  }
+  body main .main__title h1 {
+    font-size: 6.8rem;
+    line-height: 115px;
+  }
+  body main .main__formBlock {
+    top: 90px;
+    width: 60.6%;
+    height: 284px;
+  }
+  body main .main__formBlock .content {
+    left: 40px;
+    top: 35px;
+  }
+  body main .main__formBlock .content h2 {
+    font-size: 1.5rem;
+    width: 70%;
+    line-height: 31.92px;
+  }
+  body main .main__formBlock .content .inputBlock {
+    top: 10px;
+    width: 90%;
+    height: 67px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body main .main__formBlock .content .inputBlock img {
+    left: 35px;
+    width: 23px;
+    height: 23px;
+  }
+  body main .main__formBlock .content .inputBlock .addressInputField {
+    width: 63%;
+    font-size: 1.3rem;
+  }
+  body main .main__formBlock .content .inputBlock button {
+    width: 16.8%;
+    height: 53px;
+    padding: 0;
+    font-size: 1.3rem;
+    left: 78%;
+    margin: 7px 0;
+    border-radius: 15px;
+  }
+  body main .main__formBlock .content a {
+    position: relative;
+    top: 8px;
+    font-size: 1.3rem;
+  }
+  body main .main__shippingData {
+    width: 95%;
+    top: 137px;
+    z-index: 1000;
+  }
+  body main .main__shippingData .shippingData__decoration {
+    position: relative;
+    top: -40px;
+    left: 400px;
+    width: 70%;
+    height: 800px;
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  body main .main__shippingData .shippingData__infoBlock {
+    left: 0;
+    width: 40%;
+    height: 40%;
+    border-bottom-right-radius: 10px;
+  }
+  body main .main__shippingData .shippingData__infoBlock .content {
+    width: 80%;
+    height: 70%;
+    position: relative;
+    top: 8%;
+    left: 40px;
+    margin: 0;
+  }
+  body main .main__shippingData .shippingData__infoBlock .content h2 {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  body main .main__shippingData .shippingData__infoBlock .content p {
+    height: 115px;
+    font-size: 1.21rem;
+    font-weight: 100;
+    line-height: 20px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+  }
+  body main .main__shippingData .shippingData__infoBlock .content img {
+    margin-top: 20px;
+  }
+  body main .offersForYou {
+    position: relative;
+    max-width: 95%;
+    margin: 260px auto 0 auto;
+  }
+  body main .offersForYou li {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 60px;
+    width: 25%;
+    height: 695px;
+  }
+  body main .offersForYou li:nth-child(2) {
+    margin: 0 150px 60px 150px;
+  }
+  body main .offersForYou li .offersForYou__wrapperPhoto {
+    height: 466px;
+    width: 100%;
+    margin-right: 0;
+    border-radius: 10px;
+  }
+  body main .offersForYou li .offersForYou__wrapperPhoto img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  body main .offersForYou li .offersForYou__textContent h3 {
+    margin: 10px 0;
+    font-size: 2rem;
+  }
+  body main .offersForYou li .offersForYou__textContent p {
+    font-size: 1.3rem;
+    width: 96%;
+    text-align: left;
+  }
+  body main .offersForYou li .offersForYou__btnStarted {
+    width: 234px;
+    height: 53px;
+    position: relative;
+    font-size: 1rem;
+    top: 100px;
+  }
+  body footer {
+    margin-top: 0;
+  }
+  body footer .cardsBlock .cardsBlock_card {
+    margin: 10px 20px;
+    padding-bottom: 28px;
+    border-radius: 10px;
+  }
+  body footer .cardsBlock .cardsBlock_card h2 {
+    padding-bottom: 8px;
+  }
+  body footer .cardsBlock .cardsBlock_card li {
+    line-height: 12.4px;
+  }
+  body footer .cardsBlock .cardsBlock_card img {
+    width: 47.5%;
+    height: auto;
+  }
+}
+@media (max-width: 480px) {
+  body {
+    overflow-x: hidden;
+  }
+  body header {
+    max-width: 90%;
+    margin: 0 auto;
+    top: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  body header .header__logoWebsite {
+    position: relative;
+    left: -35px;
+  }
+  body header .header__buttonBlock {
+    width: 90%;
+  }
+  body header .header__buttonBlock .changingLanguage {
+    width: 10%;
+    opacity: 0;
+  }
+  body header .header__buttonBlock .signUp {
+    opacity: 0;
+  }
+  body header .header__buttonBlock .partnerProposaButtn {
+    width: 40%;
+    opacity: 0;
+  }
+  body header .header__buttonBlock .header__dopButtBlock_hidden {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    opacity: 1;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body header .header__buttonBlock .header__dopButtBlock_hidden .changeFunctions {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    gap: 10px;
+    border: none;
+    -webkit-transition: all 0.6s;
+    transition: all 0.6s;
+    background-color: white;
+  }
+  body header .header__buttonBlock .header__dopButtBlock_hidden .changeFunctions img {
+    width: 25px;
+    height: 25px;
+  }
+  body header .header__buttonBlock .header__dopButtBlock_hidden .changeFunctions.active {
+    background-color: #9772ff;
+  }
+  body header .header__buttonBlock .header__dopButtBlock_hidden .changeFunctions.active img {
+    -webkit-filter: brightness(2);
+            filter: brightness(2);
+  }
+  body main {
+    width: 100%;
+  }
+  body main .main__title {
+    width: 100%;
+    height: 86px;
+    position: relative;
+    left: 25px;
+    top: 60px;
+  }
+  body main .main__title h1 {
+    font-size: 1.5rem;
+    line-height: 27.6px;
+    width: 270px;
+    text-align: left;
+  }
+  body main .main__formBlock {
+    top: 18px;
+    width: 90%;
+    height: 183px;
+    border-radius: 10px;
+  }
+  body main .main__formBlock .content {
+    left: 14px;
+    top: 20px;
+  }
+  body main .main__formBlock .content h2 {
+    font-size: 1.1rem;
+    width: 250px;
+    line-height: 19.55px;
+  }
+  body main .main__formBlock .content .inputBlock {
+    top: -5px;
+    width: 90%;
+    height: 44px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 10px;
+  }
+  body main .main__formBlock .content .inputBlock img {
+    top: 30%;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+  }
+  body main .main__formBlock .content .inputBlock .addressInputField {
+    width: 160px;
+    top: 30%;
+    left: 50px;
+    font-size: 0.9rem;
+  }
+  body main .main__formBlock .content .inputBlock button {
+    width: 56px;
+    height: 88%;
+    padding: 0;
+    font-size: 0.75rem;
+    left: 78%;
+    margin: 3px 0;
+    border-radius: 10px;
+  }
+  body main .main__formBlock .content a {
+    position: relative;
+    top: -30px;
+    font-size: 0.88rem;
+  }
+  body main .main__shippingData {
+    width: 90%;
+    top: -90px;
+    z-index: 1000;
+    border-radius: 10px;
+    background-image: url("../icons/map360.svg");
+    background-size: cover;
+    background-color: white;
+  }
+  body main .main__shippingData .shippingData__decoration {
+    position: relative;
+    top: 48%;
+    left: -150px;
+    width: 760px;
+    height: 300px;
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+  body main .main__shippingData .shippingData__infoBlock {
+    left: 0;
+    width: 100%;
+    border-radius: 0;
+  }
+  body main .main__shippingData .shippingData__infoBlock .content {
+    width: 80%;
+    height: 88%;
+    position: relative;
+    top: 10%;
+    left: 20px;
+    margin: 0;
+  }
+  body main .main__shippingData .shippingData__infoBlock .content h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 30.62px;
+  }
+  body main .main__shippingData .shippingData__infoBlock .content p {
+    height: 70px;
+    font-size: 0.88rem;
+    font-weight: 300;
+    line-height: 20px;
+  }
+  body main .offersForYou {
+    position: relative;
+    top: -40px;
+    max-width: 90%;
+    margin: 0 auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body main .offersForYou li {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 67px;
+    width: 100%;
+    height: 466px;
+  }
+  body main .offersForYou li:nth-child(2) {
+    margin: 0 0 67px 0;
+  }
+  body main .offersForYou li:nth-child(3) {
+    margin-bottom: 30px;
+  }
+  body main .offersForYou li .offersForYou__wrapperPhoto {
+    height: 236px;
+    width: 100%;
+    margin-right: 0;
+    border-radius: 10px;
+  }
+  body main .offersForYou li .offersForYou__wrapperPhoto img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  body main .offersForYou li .offersForYou__textContent h3 {
+    margin: 10px 0;
+    font-size: 2rem;
+  }
+  body main .offersForYou li .offersForYou__textContent p {
+    font-size: 1.3rem;
+    width: 100%;
+    text-align: left;
+  }
+  body main .offersForYou li .offersForYou__btnStarted {
+    width: 234px;
+    height: 53px;
+  }
+  body footer {
+    margin-top: 0;
+  }
+  body footer .cardsBlock .cardsBlock_card {
+    height: auto;
+    margin: 10px 0;
+    width: 90%;
+    padding-bottom: 28px;
+    border-radius: 10px;
+  }
+  body footer .cardsBlock .cardsBlock_card img {
+    width: 40%;
+    height: auto;
+  }
+}
+@media (max-width: 360px) {
+  body {
+    background-image: url("../icons/BACKGROUNDDESIGN360.svg");
+  }
+  body main .main__shippingData .shippingData__decoration {
+    left: -220px;
+  }
+}

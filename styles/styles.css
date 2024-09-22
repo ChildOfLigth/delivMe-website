@@ -1,0 +1,912 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0.6px;
+  background-image: url("../BACKGROUND_DESIGN.svg");
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden;
+  background-color: #f1f0f0;
+}
+
+button {
+  cursor: pointer;
+  background-color: white;
+}
+
+header {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  max-width: 1610px;
+  height: 59px;
+  margin: 20px auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+header .logotypeWed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .logotypeWed .ico {
+  width: 56px;
+  height: 56px;
+  margin-right: 10px;
+}
+header .logotypeWed h1 {
+  font-weight: 600;
+  font-size: 28px;
+  color: #9772ff;
+  margin: 0;
+}
+header .logotypeWed h1 span {
+  color: #a6d058;
+}
+header .menuBurger {
+  position: relative;
+  display: none;
+  width: 56px;
+  height: 49px;
+  border: none;
+}
+header .menuBurger span {
+  position: absolute;
+  left: 13px;
+  width: 40px;
+  height: 2px;
+  background-color: #9772ff;
+}
+header .menuBurger span:nth-child(1) {
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
+}
+header .menuBurger span:nth-child(3) {
+  -webkit-transform: translateY(8px);
+          transform: translateY(8px);
+}
+header .buttonsBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+}
+header .buttonsBlock .langSwitchButt {
+  width: 58px;
+  height: 59px;
+  border-radius: 15px;
+  color: #9772ff;
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: 14px;
+  border: 2px solid transparent;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+header .buttonsBlock .langSwitchButt.active {
+  background-color: #9772ff;
+  color: white;
+  border: 2px solid rgba(51, 51, 51, 0.08);
+}
+header .buttonsBlock .langSwitchButt:hover {
+  border: 2px solid #9772ff;
+}
+header .buttonsBlock .signUpBtn {
+  width: 120px;
+  height: 59px;
+  font-size: 20px;
+  color: #9772ff;
+  border-radius: 15px;
+  margin-left: 14px;
+  border: 2px solid transparent;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+header .buttonsBlock .signUpBtn:hover {
+  border: 2px solid #9772ff;
+}
+
+.drop-downMenu {
+  display: none;
+  position: absolute;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: -4px;
+  right: 0;
+  background-color: #a6d05a;
+  width: 226px;
+  height: 90px;
+  z-index: 1000;
+  border-radius: 10px;
+}
+.drop-downMenu .closeMenu {
+  position: relative;
+  width: 56px;
+  height: 40px;
+  border: none;
+}
+.drop-downMenu .closeMenu span {
+  position: absolute;
+  left: 9.5px;
+  width: 35px;
+  height: 2px;
+  background-color: #9772ff;
+}
+.drop-downMenu .closeMenu span:nth-child(1) {
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
+}
+.drop-downMenu .closeMenu span:nth-child(3) {
+  -webkit-transform: translateY(8px);
+          transform: translateY(8px);
+}
+.drop-downMenu button {
+  width: 53px;
+  height: 50px;
+  border-radius: 10px;
+  color: #9772ff;
+  font-size: 1.1rem;
+  margin: 0 7px;
+  border: none;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.drop-downMenu button.active {
+  background-color: #9772ff;
+  color: white;
+  border: 2px solid rgba(51, 51, 51, 0.08);
+}
+.drop-downMenu.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.registrationUnit {
+  position: relative;
+  top: 116px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 15px;
+  width: 755px;
+  height: 530px;
+  padding: 10px 55px;
+  -webkit-box-shadow: 0px 140px 56px rgba(13, 13, 13, 0.01), 0px 79px 47px rgba(13, 13, 13, 0.05), 0px 35px 35px rgba(13, 13, 13, 0.09), 0px 9px 19px rgba(13, 13, 13, 0.1);
+          box-shadow: 0px 140px 56px rgba(13, 13, 13, 0.01), 0px 79px 47px rgba(13, 13, 13, 0.05), 0px 35px 35px rgba(13, 13, 13, 0.09), 0px 9px 19px rgba(13, 13, 13, 0.1);
+}
+.registrationUnit .registrationUnit_wrapper {
+  position: relative;
+  top: -17px;
+  left: -15px;
+}
+.registrationUnit .registrationUnit_wrapper h2 {
+  font-weight: 700;
+  font-size: 3rem;
+}
+.registrationUnit .registrationUnit_wrapper p {
+  font-size: 1rem;
+  font-weight: 400;
+  width: 570px;
+  line-height: 21.28px;
+  padding-bottom: 15px;
+}
+.registrationUnit .registrationUnit_wrapper .registForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.registrationUnit .registrationUnit_wrapper .registForm label {
+  font-size: 20px;
+}
+.registrationUnit .registrationUnit_wrapper .registForm .registForm_inputField {
+  margin: 10px 0;
+  font-size: 1.5rem;
+  padding: 0 10px;
+  width: 740px;
+  height: 64px;
+  border: none;
+  border-radius: 15px;
+  background-color: white;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), -18px 55px 23px rgba(13, 13, 13, 0.01), -10px 31px 20px rgba(13, 13, 13, 0.05), -5px 14px 15px rgba(13, 13, 13, 0.09), -1px -4px 8px rgba(19, 19, 19, 0.1);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), -18px 55px 23px rgba(13, 13, 13, 0.01), -10px 31px 20px rgba(13, 13, 13, 0.05), -5px 14px 15px rgba(13, 13, 13, 0.09), -1px -4px 8px rgba(19, 19, 19, 0.1);
+}
+.registrationUnit .registrationUnit_wrapper .registForm .registForm_inputField:focus {
+  outline: 2px solid #9772ff;
+}
+.registrationUnit .registrationUnit_wrapper .registForm .linkInCaseError {
+  color: #9772ff;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+  margin-top: 8px;
+}
+.registrationUnit .registrationUnit_wrapper .registForm .sendOneTimePass {
+  background-color: #9772ff;
+  color: white;
+  border-radius: 15px;
+  width: 506px;
+  height: 48px;
+  border: none;
+  font-size: 19px;
+  margin: 40px 0 5px 0;
+}
+.registrationUnit .registrationUnit_wrapper .registForm .applyNow {
+  font-size: 20px;
+}
+.registrationUnit .registrationUnit_wrapper .registForm .applyNow a {
+  font-weight: 400;
+  color: #9772ff;
+  text-decoration: none;
+}
+
+footer {
+  position: relative;
+  top: 450px;
+  background-color: #57761e;
+  width: 100%;
+  height: 60%;
+  padding: 10px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+footer .cardsBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 1360px;
+  margin: 80px auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+footer .cardsBlock .cardsBlock_card {
+  width: 500px;
+  height: 350px;
+  border-radius: 24px;
+  margin: 0 20px;
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+footer .cardsBlock .cardsBlock_card .cardsBlock_card_content {
+  position: relative;
+  left: -13px;
+}
+footer .cardsBlock .cardsBlock_card .cardsBlock_card_content h2 {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 33px;
+}
+footer .cardsBlock .cardsBlock_card .cardsBlock_card_content li {
+  list-style: none;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 26.6px;
+  color: white;
+}
+
+@media (max-width: 1098px) {
+  header {
+    padding: 0 70px;
+  }
+  .registrationUnit {
+    width: 550px;
+    height: 467px;
+  }
+  .registrationUnit .registrationUnit_wrapper h2 {
+    font-size: 2rem;
+  }
+  .registrationUnit .registrationUnit_wrapper .registForm .registForm_inputField {
+    margin: 8px 0;
+    font-size: 1rem;
+    padding: 6px 4px;
+    width: 520px;
+    height: 30px;
+    border-radius: 5px;
+  }
+  footer .cardsBlock {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    max-width: 1300px;
+    margin: 80px auto;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  footer .cardsBlock .cardsBlock_card {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    max-width: 220px;
+    height: 333px;
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.1);
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  footer .cardsBlock .cardsBlock_card .cardsBlock_card_content {
+    position: relative;
+    left: -10px;
+  }
+  footer .cardsBlock .cardsBlock_card .cardsBlock_card_content h2 {
+    font-size: 1.2rem;
+  }
+  footer .cardsBlock .cardsBlock_card .cardsBlock_card_content li {
+    font-size: 1.17rem;
+  }
+}
+@media (max-width: 999px) {
+  footer .cardsBlock .cardsBlock_card {
+    height: 350px;
+  }
+  footer .cardsBlock .cardsBlock_card .cardsBlock_card_content {
+    position: relative;
+    left: -18px;
+  }
+  footer .cardsBlock .cardsBlock_card .cardsBlock_card_content h2 {
+    font-size: 1.1rem;
+  }
+  footer .cardsBlock .cardsBlock_card .cardsBlock_card_content li {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 910px) {
+  .registrationUnit {
+    width: 490px;
+    height: 467px;
+  }
+  .registrationUnit .registrationUnit_wrapper h2 {
+    font-size: 2.1rem;
+  }
+  .registrationUnit .registrationUnit_wrapper p {
+    width: 90%;
+    font-size: 1.2rem;
+  }
+  .registrationUnit .registrationUnit_wrapper .registForm label {
+    font-size: 1rem;
+  }
+  .registrationUnit .registrationUnit_wrapper .registForm .linkInCaseError {
+    font-size: 1.1rem;
+  }
+  .registrationUnit .registrationUnit_wrapper .registForm .registForm_inputField {
+    margin: 8px 0;
+    font-size: 1rem;
+    padding: 6px 4px;
+    width: 520px;
+    height: 30px;
+    border-radius: 5px;
+  }
+  .registrationUnit .registrationUnit_wrapper .registForm .sendOneTimePass {
+    width: 440px;
+  }
+  .registrationUnit .registrationUnit_wrapper .registForm .applyNow {
+    font-size: 1.1rem;
+  }
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  footer .cardsBlock {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 90%;
+    margin: 15px auto;
+  }
+  footer .cardsBlock .cardsBlock_card {
+    width: 500px;
+    height: 370px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0 10px 10px 0;
+  }
+  footer .cardsBlock .cardsBlock_card .cardsBlock_card_content {
+    position: relative;
+    left: -14px;
+  }
+  footer .cardsBlock .cardsBlock_card .cardsBlock_card_content h2 {
+    font-size: 1.2rem;
+  }
+  footer .cardsBlock .cardsBlock_card .cardsBlock_card_content li {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 836px) {
+  footer {
+    position: relative;
+    top: 300px;
+    background-color: #57761e;
+    height: 90%;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  footer .cardsBlock {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+  }
+  footer .cardsBlock .cardsBlock_card {
+    width: 90%;
+    max-width: 450px;
+    border-radius: 24px;
+    margin: 0 auto;
+  }
+  footer .cardsBlock .cardsBlock_card .cardsBlock_card_content {
+    position: relative;
+    left: -13px;
+  }
+  footer .cardsBlock .cardsBlock_card .cardsBlock_card_content h2 {
+    font-size: 1.3rem;
+  }
+  footer .cardsBlock .cardsBlock_card .cardsBlock_card_content li {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 648px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    max-width: 1610px;
+    height: 59px;
+    padding: 0 28px;
+  }
+  header .ico {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+  }
+  header h1 {
+    font-weight: 600;
+    font-size: 25px;
+  }
+  header .buttonBlock {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+  }
+  header .buttonBlock .langSwitchButt {
+    width: 58px;
+    height: 59px;
+    border-radius: 15px;
+    color: #9772ff;
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 14px;
+    border: 2px solid transparent;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  header .buttonBlock .langSwitchButt.active {
+    background-color: #9772ff;
+    color: white;
+    border: 2px solid rgba(51, 51, 51, 0.08);
+  }
+  header .buttonBlock .langSwitchButt:hover {
+    border: 2px solid #9772ff;
+  }
+  header .buttonBlock .signUpBtn {
+    width: 120px;
+    height: 59px;
+    font-size: 20px;
+    color: #9772ff;
+    border-radius: 15px;
+    margin-left: 14px;
+    border: 2px solid transparent;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  header .buttonBlock .signUpBtn:hover {
+    border: 2px solid #9772ff;
+  }
+  .registrationUnit {
+    width: 390px;
+    height: 467px;
+  }
+  .registrationUnit .registrationUnit_wrapper h2 {
+    font-size: 1.7rem;
+  }
+  .registrationUnit .registrationUnit_wrapper p {
+    width: 90%;
+    font-size: 1.2rem;
+  }
+  .registrationUnit .registrationUnit_wrapper .registForm label {
+    font-size: 1.1rem;
+  }
+  .registrationUnit .registrationUnit_wrapper .registForm .linkInCaseError {
+    font-size: 1.2rem;
+  }
+  .registrationUnit .registrationUnit_wrapper .registForm .registForm_inputField {
+    margin: 8px 0;
+    font-size: 1rem;
+    padding: 6px 4px;
+    width: 400px;
+    height: 30px;
+    border-radius: 5px;
+  }
+  .registrationUnit .registrationUnit_wrapper .registForm .sendOneTimePass {
+    width: 370px;
+  }
+  .registrationUnit .registrationUnit_wrapper .registForm .applyNow {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 590px) {
+  header .menuBurger {
+    display: block;
+  }
+  header .buttonsBlock {
+    display: none;
+  }
+  .registrationUnit {
+    width: 390px;
+    height: 467px;
+  }
+  .registrationUnit .registrationUnit_wrapper h2 {
+    font-size: 1.7rem;
+  }
+  .registrationUnit .registrationUnit_wrapper p {
+    width: 90%;
+    font-size: 1.2rem;
+  }
+  .registrationUnit .registrationUnit_wrapper .registForm label {
+    font-size: 1.1rem;
+  }
+  .registrationUnit .registrationUnit_wrapper .registForm .linkInCaseError {
+    font-size: 1.2rem;
+  }
+  .registrationUnit .registrationUnit_wrapper .registForm .registForm_inputField {
+    margin: 8px 0;
+    font-size: 1rem;
+    padding: 6px 4px;
+    width: 400px;
+    height: 30px;
+    border-radius: 5px;
+  }
+  .registrationUnit .registrationUnit_wrapper .registForm .sendOneTimePass {
+    width: 370px;
+  }
+  .registrationUnit .registrationUnit_wrapper .registForm .applyNow {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 513px) {
+  header {
+    max-width: 480px;
+  }
+  header .menuBurger {
+    display: block;
+  }
+  header .buttonsBlock {
+    display: none;
+  }
+  .registrationUnit {
+    width: 300px;
+    height: 420px;
+  }
+  .registrationUnit .registrationUnit_wrapper h2 {
+    margin-top: 28px;
+    font-size: 1.5rem;
+  }
+  .registrationUnit .registrationUnit_wrapper p {
+    width: 95%;
+    font-size: 1.1rem;
+  }
+  .registrationUnit .registrationUnit_wrapper .registForm label {
+    font-size: 1rem;
+  }
+  .registrationUnit .registrationUnit_wrapper .registForm .linkInCaseError {
+    font-size: 1rem;
+  }
+  .registrationUnit .registrationUnit_wrapper .registForm .registForm_inputField {
+    margin: 8px 0;
+    font-size: 1rem;
+    padding: 5px 4px;
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+  }
+  .registrationUnit .registrationUnit_wrapper .registForm .sendOneTimePass {
+    font-size: 1.1rem;
+    margin: 10px 0 0 0;
+    width: 97%;
+  }
+  .registrationUnit .registrationUnit_wrapper .registForm .applyNow {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 480px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: auto;
+    max-width: 450px;
+    height: 20px;
+    margin: 20px auto;
+    padding: 25px 16px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  header .logotypeWed .ico {
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+  }
+  header .logotypeWed h1 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #9772ff;
+    margin: 0;
+  }
+  header .logotypeWed h1 span {
+    color: #a6d058;
+  }
+  header .menuBurger {
+    display: block;
+  }
+  header .menuBurger span {
+    width: 31px;
+  }
+  header .buttonBlock {
+    display: none;
+  }
+  main {
+    min-height: 30vh;
+  }
+  main .registrationUnit {
+    position: relative;
+    top: 10px;
+    left: 3px;
+    margin: 0 10px;
+    border-radius: 15px;
+    width: 90%;
+    height: auto;
+    padding: 20px;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  main .registrationUnit .registrationUnit_wrapper {
+    position: relative;
+    left: 0;
+  }
+  main .registrationUnit .registrationUnit_wrapper h2 {
+    font-weight: 600;
+    font-size: 1.7rem;
+  }
+  main .registrationUnit .registrationUnit_wrapper p {
+    font-size: 18px;
+    font-weight: 400;
+    width: 90%;
+    line-height: 1.2;
+    padding-bottom: 10px;
+  }
+  main .registrationUnit .registrationUnit_wrapper .registForm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto;
+  }
+  main .registrationUnit .registrationUnit_wrapper .registForm label {
+    font-size: 16px;
+  }
+  main .registrationUnit .registrationUnit_wrapper .registForm .registForm_inputField {
+    margin: 8px 0;
+    font-size: 14px;
+    padding: 6px 4px;
+    width: 94%;
+    height: 50px;
+  }
+  main .registrationUnit .registrationUnit_wrapper .registForm .registForm_inputField:focus {
+    outline: 2px solid #9772ff;
+  }
+  main .registrationUnit .registrationUnit_wrapper .registForm .linkInCaseError {
+    color: #9772ff;
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+    margin-top: 8px;
+  }
+  main .registrationUnit .registrationUnit_wrapper .registForm .sendOneTimePass {
+    background-color: #9772ff;
+    color: white;
+    border-radius: 8px;
+    width: 93%;
+    height: 41px;
+    border: none;
+    font-size: 18px;
+    margin: 15px 0;
+  }
+  main .registrationUnit .registrationUnit_wrapper .registForm .applyNow {
+    font-size: 1rem;
+  }
+  footer {
+    position: relative;
+    top: 100px;
+    background-color: #57761e;
+    height: 90%;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  footer .cardsBlock {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+  }
+  footer .cardsBlock .cardsBlock_card {
+    width: 90%;
+    max-width: 450px;
+    border-radius: 24px;
+    margin: 0 auto;
+  }
+  footer .cardsBlock .cardsBlock_card .cardsBlock_card_content {
+    position: relative;
+    left: -13px;
+  }
+  footer .cardsBlock .cardsBlock_card .cardsBlock_card_content h2 {
+    font-size: 1.5rem;
+  }
+  footer .cardsBlock .cardsBlock_card .cardsBlock_card_content li {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 320px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 85%;
+    max-width: 300px;
+    height: 20px;
+    margin: 20px auto;
+    padding: 25px 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  header .logotypeWed .ico {
+    width: 40px;
+    margin-right: 10px;
+  }
+  header .logotypeWed h1 {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #9772ff;
+    margin: 0;
+  }
+  header .logotypeWed h1 span {
+    color: #a6d058;
+  }
+  header .menuBurger {
+    display: block;
+  }
+  header .menuBurger span {
+    width: 31px;
+  }
+  header .buttonBlock {
+    display: none;
+  }
+  main {
+    min-height: 30vh;
+  }
+  main .registrationUnit {
+    position: relative;
+    top: 10px;
+    left: -2px;
+    margin: 0 10px;
+    width: 90%;
+  }
+  main .registrationUnit .registrationUnit_wrapper {
+    position: relative;
+    left: 0;
+  }
+  main .registrationUnit .registrationUnit_wrapper h2 {
+    font-weight: 600;
+    font-size: 1.7rem;
+  }
+  main .registrationUnit .registrationUnit_wrapper p {
+    font-size: 1rem;
+    font-weight: 400;
+    width: 90%;
+  }
+  main .registrationUnit .registrationUnit_wrapper .registForm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto;
+  }
+  main .registrationUnit .registrationUnit_wrapper .registForm label {
+    font-size: 16px;
+  }
+  main .registrationUnit .registrationUnit_wrapper .registForm .registForm_inputField {
+    margin: 8px 0;
+    font-size: 14px;
+    padding: 6px 4px;
+    width: 90%;
+    height: 50px;
+  }
+  main .registrationUnit .registrationUnit_wrapper .registForm .registForm_inputField:focus {
+    outline: 2px solid #9772ff;
+  }
+  main .registrationUnit .registrationUnit_wrapper .registForm .linkInCaseError {
+    color: #9772ff;
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+    margin-top: 8px;
+  }
+  main .registrationUnit .registrationUnit_wrapper .registForm .sendOneTimePass {
+    background-color: #9772ff;
+    color: white;
+    border-radius: 8px;
+    width: 93%;
+    height: 41px;
+    border: none;
+    font-size: 1rem;
+    margin: 15px 0;
+  }
+  main .registrationUnit .registrationUnit_wrapper .registForm .applyNow {
+    font-size: 1rem;
+  }
+}
